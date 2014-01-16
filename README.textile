@@ -1,0 +1,36 @@
+h1. Numeric Nation Input Gem for Rails 3
+
+h2. Info
+
+Accepts "103 309,409" as float in database.
+
+h2. Installation
+
+<pre>
+# Gemfile
+gem "numeric_nation_input", :git => "http://github.com/netbrick/numeric_nation_input.git"
+</pre>
+
+h2. Usage
+
+<pre>
+class TestModel < ActiveRecord::Base
+  attr_accessible :attr1, :attr2
+
+  numeric_nation_input :attr1, :attr2
+end
+</pre>
+
+h2. Test
+
+<pre>
+
+> t = TestModel.new
+> t.attr1 = "2 030,35"
+> t.attr1.to_s
+2030.35
+>
+</pre>
+
+
+

@@ -5,8 +5,8 @@ Gem::Specification.new do |s|
   s.name = 'numeric_nation_input'
   s.version = NumericNationInput::VERSION
   s.platform = Gem::Platform::RUBY
-  s.authors = %w(jan.strnadek@gmail.com)
-  s.email = []
+  s.authors = %w(Jan Strnádek Josef Šimánek)
+  s.email = %w(jan.strnadek@gmail.com retro@ballgag.cz)
   s.homepage = 'https://github.com/netbrick/numeric_nation_input'
   s.summary = 'Implementation of saving nation numerc inputs in AR'
   s.description = "Implementation of saving nation numerc inputs in AR"
@@ -16,6 +16,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'activerecord', '~> 3.2'
 
   s.add_development_dependency 'bundler', '>= 1.0.0'
+  s.add_development_dependency 'minitest'
+  s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'rake'
 
   s.files = `git ls-files`.split("\n")

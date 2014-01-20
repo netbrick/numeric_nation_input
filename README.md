@@ -9,7 +9,7 @@ Allow `,` as decimal part delimiter for AR's float typecasting from string.
 
 ```ruby
 # Gemfile
-gem "numeric_nation_input", git: "http://github.com/netbrick/numeric_nation_input.git"
+gem "numeric_nation_input"
 ```
 
 ## Usage

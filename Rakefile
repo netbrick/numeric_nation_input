@@ -1,10 +1,10 @@
 require 'bundler'
+require 'rake/testtask'
 Bundler::GemHelper.install_tasks
 
-task :test do
-  Dir['test/*_test.rb'].each do |testfile|
-    load testfile
-  end
+Rake::TestTask.new(:test) do |t|
+  t.libs << 'test'
+  t.pattern = 'test/**/*_test.rb'
 end
 
 task :default => :test

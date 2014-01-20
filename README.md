@@ -1,4 +1,5 @@
 # Numeric Nation Input Gem for Rails 3.2
+[![Build Status](https://travis-ci.org/netbrick/numeric_nation_input.png?branch=master)](https://travis-ci.org/netbrick/numeric_nation_input)
 
 ## Info
 

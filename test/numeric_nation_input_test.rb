@@ -34,4 +34,9 @@ class NumericNationInputTest < Minitest::Test
     @model.number = 1.5
     assert_equal 1.5, @model.number
   end
+
+  def test_accepts_number_with_spaces
+    @model.number = "1 230,30"
+    assert_equal 1230.3, @model.number
+  end
 end

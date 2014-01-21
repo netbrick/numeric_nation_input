@@ -2,7 +2,7 @@ require 'active_record'
 
 module NumericNationInput
   def self.normalize(number)
-    number.gsub(',', '.')
+    number.gsub(',', '.').gsub(' ', '')
   end
 end
 

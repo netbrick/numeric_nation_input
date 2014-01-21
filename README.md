@@ -4,7 +4,7 @@
 
 ## Info
 
-Allow `,` as decimal part delimiter for AR's float typecasting from string.
+Allow `,` and ` ` as decimal part delimiter for AR's float typecasting from string.
 
 ## Installation
 
@@ -22,6 +22,6 @@ class TestModel < ActiveRecord::Base
   numeric_nation_input :attr1, :attr2
 end
 
-model = TestModel.new(attr1: "1025,45")
+model = TestModel.new(attr1: "1 025,45")
 model.attr1 #=> 1025.45 (Float)
 ```

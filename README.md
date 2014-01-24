@@ -4,7 +4,7 @@
 
 ## Info
 
-Allow `,` and ` ` as decimal part delimiter for AR's float typecasting from string.
+Allow `,` and `space` as decimal part delimiter for AR's float typecasting from string.
 
 ## Installation
 

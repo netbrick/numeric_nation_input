@@ -2,6 +2,9 @@ require 'bundler/setup'
 require 'minitest/autorun'
 require 'numeric_nation_input'
 
+require 'coveralls'
+Coveralls.wear!
+
 ActiveRecord::Base.establish_connection :adapter => 'sqlite3', :database => 'test/test.sqlite3'
 
 ActiveRecord::Migration.create_table :test_models do |t|
